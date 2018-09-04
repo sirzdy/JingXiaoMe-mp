@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/user/user",
     "pages/local/local",
-    "pages/index/index",
+
     "pages/mall/mall",
     "pages/mine/mine",
     "pages/login/login",

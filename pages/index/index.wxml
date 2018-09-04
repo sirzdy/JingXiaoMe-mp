@@ -1,74 +1,6 @@
 <!--index.wxml-->
-<view class="container">
-
-  <view class="header" bindtap='goLocal'>
-    <text class="header_text">出发地:xxx</text>
-    <text class="header_text">天气:多云 23℃</text>
-  </view>
-
-  <view class='blocks'>
-    <view class='block block1'>
-      <text class='block_title'>行程定制</text>
-      <text class='block_detail'>#xxxxx</text>
-    </view>
-    <view class='block block2'>
-      <text class='block_title'>发布需求</text>
-      <text class='block_detail'>#找专属导游定制旅程</text>
-    </view>
-  </view>
-
-  <view class='guide'>
-    <text class='guide_text'>👉点击成为认证导游</text>
-  </view>
-
-  <view class='journey'>
-    <text class='journey_text'>进行中的行程：北京-上海（8月7号-8月10号）</text>
-  </view>
-
-  <view class='sep'></view>
-
-  <view class='cons'>
-    <view class='con'>
-      <text>xxxxxxxxxxxx xxxxxxxxxx xxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-    <view class='con'>
-      <text>xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-    <view class='con'>
-      <text>xxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-    <view class='con'>
-      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-    <view class='con'>
-      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-    <view class='con'>
-      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
-      <text>厦门-北京 3日游旅游预算3000元</text>
-      <text>制作人：xxx</text>
-      <text>浏览：xxx</text>
-    </view>
-  </view>
-
-</view>
-
-<!-- <view class="userinfo">
+<!--<view class="container">
+  <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -77,4 +9,67 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view> -->
+  </view>
+</view>-->
+<!--<button bindtap="clickMe">点击我</button>
+<text>{{latitude}}&#45;&#45;{{longitude}}</text>
+<button bindtap="sCan">扫一扫</button>
+<button bindtap="video">视频</button>-->
+<view class="content">
+
+<view style="display: none">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
+</view>
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+  <swiper indicator-dots="false" class="swiper" >
+    <block wx:for="{{swiperImgs}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view style="width:100%">
+    <view class="img_item">
+      <view class="item_content" wx:for="{{col1}}" wx:key="id">
+        <image src="{{item.pic}}" class="item_img" style="width:100%;height:{{item.height}}px"></image>
+        <view class="item_tip">
+          <text class="tip_tag">#求推荐#</text>
+          <text class="tip_text">特别好玩的地方</text>
+        </view>
+        <view class="item_user">
+          <view class="user_left">
+            <image class="img_like" src="../../images/user.png"/>
+            <text class="user_name">leroy</text>
+          </view>
+
+          <view class="user_right">
+            <image class="img_like" src="../../images/like.png"/>
+            <text class="user_num">15</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="img_item">
+      <view class="item_content" wx:for="{{col2}}" wx:key="id">
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px"></image>
+        <view class="item_tip">
+          <text class="tip_tag">#求推荐#</text>
+          <text class="tip_text">特别好玩的地方</text>
+        </view>
+        <view class="item_user">
+          <view class="user_left">
+            <image class="img_like" src="../../images/user.png"/>
+            <text class="user_name">leroy</text>
+          </view>
+
+          <view class="user_right">
+            <image class="img_like" src="../../images/like.png"/>
+            <text class="user_num">15</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>
