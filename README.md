@@ -12,3 +12,5 @@
 
 [Ant Design 官方图标库](http://iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=9402) ，使用的图标请收藏，方便以后修改颜色等。
 
+    
+    // "navigationStyle": "custom",

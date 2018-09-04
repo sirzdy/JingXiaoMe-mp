@@ -2,28 +2,79 @@
 <!-- <text>pages/local/local.wxml</text> -->
 <view class='container'>
   <view class='header' style='background:url("../../asserts/images/scene.jpg") no-repeat center;background-size: cover;'>
-    <!-- <image class='header_image' src="../../asserts/images/scene.jpg" mode="aspectFill"></image> -->
     <view class='header_info'>
-      <text class='header_text'>聊下他</text>
+      <view class='header_info_left'>
+        <view>
+          <image class='header_favicon' src="../../asserts/images/fav.png" mode="aspectFill"></image>
+        </view>
+        <view>
+          <text class='header_text'>田馥甄 </text>
+          <text class='header_text'>拍摄于北京</text>
+          <i-icon type="coordinates" size="20" color="#ffffff" />
+        </view>
+      </view>
+      <view class='header_info_right'>
+        <text class='header_text'>撩下TA</text>
+        <i-icon type="interactive" size="20" color="#ffffff" />
+      </view>
     </view>
   </view>
-  <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
-  <i-tabs style='width:100%;' current="tab1" bindchange="handleChange">
-    <i-tab key="tab1" title="最新"></i-tab>
-    <i-tab key="tab2" title="热门"></i-tab>
-  </i-tabs>
-  <i-tabs style='width:100%;' current="tab1" bindchange="handleChange" scroll="{true}">
-    <i-tab key="tab1" title="1月"></i-tab>
-    <i-tab key="tab2" title="2月"></i-tab>
-    <i-tab key="tab3" title="3月"></i-tab>
-    <i-tab key="tab4" title="4月"></i-tab>
-    <i-tab key="tab5" title="5月"></i-tab>
-    <i-tab key="tab6" title="6月"></i-tab>
-    <i-tab key="tab7" title="7月"></i-tab>
-    <i-tab key="tab8" title="8月"></i-tab>
-    <i-tab key="tab9" title="9月"></i-tab>
-    <i-tab key="tab10" title="10月"></i-tab>
-    <i-tab key="tab11" title="11月"></i-tab>
-    <i-tab key="tab12" title="12月"></i-tab>
-  </i-tabs>
+  <view class='pos_wrap'>
+    <text class='pos' decode="{{true}}">北京&nbsp;</text>
+    <text class='pos_more' decode="{{true}}">/&nbsp;蜜友</text>
+  </view>
+  <view class='track'>
+    <view wx:for="{{[1,2,3,4,5]}}" wx:key="{{index}}">
+      <image class='track_user' src="../../asserts/images/fav.png" mode="aspectFill"></image>
+    </view>
+    <view class='sep'></view>
+    <text class='track_more'>Ta们在这里留下了足迹</text>
+  </view>
+  <view class='hot'>
+    <view class='hot_header'>
+      <text class='hot_text'>热点景区</text>
+      <view class='sep'></view>
+      <view>
+        <text class='hot_more'>更多</text>
+        <i-icon type="enter" size="14" color="#000" />
+      </view>
+    </view>
+    <scroll-view class='spots_wrap' scroll-x>
+      <view class='spot_wrap' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+        <image class='spot' src="../../asserts/images/spot.png" mode="aspectFill"></image>
+        <text class='spot_name'>故宫</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='hot'>
+    <view class='hot_header'>
+      <text class='hot_text'>热门话题</text>
+    </view>
+    <scroll-view class='topics_wrap' scroll-x>
+      <text class='topic' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">#北京必打卡#</text>
+    </scroll-view>
+  </view>
+  <!-- <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button> -->
+  <view style='position: sticky;top:0'>
+    <i-tabs style='width:100%;' current="tab1" bindchange="handleChange">
+      <i-tab key="tab1" title="最新"></i-tab>
+      <i-tab key="tab2" title="热门"></i-tab>
+    </i-tabs>
+    <i-tabs style='width:100%;' current="tab1" bindchange="handleChange" scroll="{true}">
+      <i-tab key="tab1" title="1月"></i-tab>
+      <i-tab key="tab2" title="2月"></i-tab>
+      <i-tab key="tab3" title="3月"></i-tab>
+      <i-tab key="tab4" title="4月"></i-tab>
+      <i-tab key="tab5" title="5月"></i-tab>
+      <i-tab key="tab6" title="6月"></i-tab>
+      <i-tab key="tab7" title="7月"></i-tab>
+      <i-tab key="tab8" title="8月"></i-tab>
+      <i-tab key="tab9" title="9月"></i-tab>
+      <i-tab key="tab10" title="10月"></i-tab>
+      <i-tab key="tab11" title="11月"></i-tab>
+      <i-tab key="tab12" title="12月"></i-tab>
+    </i-tabs>
+  </view>
+  <view class='con' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+  </view>
 </view>
