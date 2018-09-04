@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="header">
+    <text class="header_text">出发地:xxx</text>
+    <text class="header_text">天气:多云 23℃</text>
+  </view>
+
+  <view class='blocks'>
+    <view class='block block1'>
+      <text class='block_title'>行程定制</text>
+      <text class='block_detail'>#xxxxx</text>
+    </view>
+    <view class='block block2'>
+      <text class='block_title'>发布需求</text>
+      <text class='block_detail'>#找专属导游定制旅程</text>
+    </view>
+  </view>
+
+  <view class='guide'>
+    <text class='guide_text'>👉点击成为认证导游</text>
+  </view>
+
+  <view class='journey'>
+    <text class='journey_text'>进行中的行程：北京-上海（8月7号-8月10号）</text>
+  </view>
+
+  <view class='sep'></view>
+
+  <view class='cons'>
+    <view class='con'>
+      <text>xxxxxxxxxxxx xxxxxxxxxx xxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+    <view class='con'>
+      <text>xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+    <view class='con'>
+      <text>xxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+    <view class='con'>
+      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+    <view class='con'>
+      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+    <view class='con'>
+      <text>xxxxxxxxxx xxxxxx xxxxxx xxxxxx</text>
+      <text>厦门-北京 3日游旅游预算3000元</text>
+      <text>制作人：xxx</text>
+      <text>浏览：xxx</text>
+    </view>
+  </view>
+
+</view>
+
+<!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->

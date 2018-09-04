@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.header {
+  /* height: 60rpx; *//* background: #f00; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_text {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.blocks {
+  margin: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block {
+  width: 340rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1rpx 3rpx 10rpx rgba(0, 0, 0, 0.7);
+}
+
+.block1 {
+  background: #e7817c;
+}
+
+.block2 {
+  background: #85d379;
+}
+
+.block_title {
+  font-size: 40rpx;
+}
+
+.block_detail {
+  font-size: 30rpx;
+}
+
+.guide {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.guide_text {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.journey {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60rpx;
+  margin: 20rpx;
+  border: 3rpx solid rgba(0, 0, 0, 0.1);
+  border-radius: 15rpx;
+}
+
+.journey_text {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.sep {
+  height: 3rpx;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.cons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  flex-wrap: wrap;
+}
+
+.con {
+  margin: 20rpx 25rpx;
+  /* height: 300rpx; */
+  /* background: #f00; */
+  border: 3rpx solid rgba(0, 0, 0, 0.3);
+  width: 300rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

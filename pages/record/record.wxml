@@ -1,0 +1,5 @@
+<!--pages/record.wxml-->
+<button bindtap="record" bindtouchstart='recordStart' bindtouchend='recordEnd'>{{recordText}}</button>
+<text>{{searchText}}</text>
+<!-- <button bindtap="startRecord">开始</button> -->
+<!-- <button bindtap="stopRecord">结束</button> -->
