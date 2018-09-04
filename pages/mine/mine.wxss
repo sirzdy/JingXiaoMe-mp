@@ -1,1 +1,22 @@
 /* pages/mine/mine.wxss */
+.grid_text{
+  font-size: 12px;
+}
+.photo{
+  size: 12px;
+}
+.info{
+  margin: 16px 10px;
+  display: flex;
+}
+.info_cel{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+.info_lv{
+  margin-left: 6px;
+}

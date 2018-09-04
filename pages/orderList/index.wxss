@@ -1,0 +1,4 @@
+/* pages/orderList/index.wxss */
+.card_item{
+  margin-top: 4px;
+}

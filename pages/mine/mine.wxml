@@ -1,2 +1,67 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<i-notice-bar icon="systemprompt" closable>
+<i-avatar size="small" i-class='photo'>梁</i-avatar>
+<i-avatar size="small">宋</i-avatar>
+<i-avatar size="small">李</i-avatar>
+  等10位好友正在使用京小蜜
+</i-notice-bar>
+
+<view class='info'>
+  <i-avatar  size="large">梁</i-avatar>
+  <view class='info_cel'>
+  <view>
+  <label>张三</label>
+  <i-tag 
+      i-class='info_lv'
+      class="i-tags"
+      name="Lv1" 
+      color="green"
+      type="border">
+      Lv1
+  </i-tag>
+  </view>
+  <i-icon type="enter" />
+  </view>
+</view>
+<i-grid>
+    <i-grid-item>
+        <i-grid-icon>
+          <i-icon type="collection_fill" size="20" color='#EDA524' />
+        </i-grid-icon>
+        <i-grid-label i-class='grid_text'>我的收藏</i-grid-label>
+    </i-grid-item>
+    <navigator url="/pages/orderList/index">
+      <i-grid-item>
+        <i-grid-icon>
+          <i-icon type="createtask_fill" size="20" color='#4CC0D3' />
+        </i-grid-icon>
+        <i-grid-label>我的订单</i-grid-label>
+      </i-grid-item>
+  </navigator>
+  <i-grid-item>
+    <i-grid-icon>
+      <i-icon type="live_fill" size="20" color='#53BADF' />
+    </i-grid-icon>
+    <i-grid-label>我的游记</i-grid-label>
+  </i-grid-item>
+</i-grid>
+<i-grid>
+  <i-grid-item>
+    <i-grid-icon>
+     <i-icon type="collection_fill" size="20" color='#88CC6F' />
+    </i-grid-icon>
+    <i-grid-label>Grid</i-grid-label>
+  </i-grid-item>
+  <i-grid-item>
+    <i-grid-icon>
+     <i-icon type="collection_fill" size="20" color='#F1589D' />
+    </i-grid-icon>
+    <i-grid-label>Grid</i-grid-label>
+  </i-grid-item>
+  <i-grid-item>
+    <i-grid-icon>
+     <i-icon type="collection_fill" size="20" color='#4CC0D3' />
+    </i-grid-icon>
+    <i-grid-label>Grid</i-grid-label>
+  </i-grid-item>
+</i-grid>

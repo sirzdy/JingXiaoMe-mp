@@ -1,0 +1,19 @@
+<!--pages/orderList/index.wxml-->
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
+<i-card title="北京-上海" i-class='card_item' full='true' extra="￥100" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="footer">2018-09-01 北京航空</view>
+</i-card>
