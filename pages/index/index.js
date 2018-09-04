@@ -51,4 +51,9 @@ Page({
       hasUserInfo: true
     })
   },
+  goLocal: function() {
+    wx.navigateTo({
+      url: '../local/local'
+    })
+  }
 })

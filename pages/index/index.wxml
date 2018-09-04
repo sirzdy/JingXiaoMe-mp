@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
 
-  <view class="header">
+  <view class="header" bindtap='goLocal'>
     <text class="header_text">出发地:xxx</text>
     <text class="header_text">天气:多云 23℃</text>
   </view>

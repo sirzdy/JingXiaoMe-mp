@@ -1,0 +1,29 @@
+<!--pages/local/local.wxml-->
+<!-- <text>pages/local/local.wxml</text> -->
+<view class='container'>
+  <view class='header' style='background:url("../../asserts/images/scene.jpg") no-repeat center;background-size: cover;'>
+    <!-- <image class='header_image' src="../../asserts/images/scene.jpg" mode="aspectFill"></image> -->
+    <view class='header_info'>
+      <text class='header_text'>聊下他</text>
+    </view>
+  </view>
+  <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
+  <i-tabs style='width:100%;' current="tab1" bindchange="handleChange">
+    <i-tab key="tab1" title="最新"></i-tab>
+    <i-tab key="tab2" title="热门"></i-tab>
+  </i-tabs>
+  <i-tabs style='width:100%;' current="tab1" bindchange="handleChange" scroll="{true}">
+    <i-tab key="tab1" title="1月"></i-tab>
+    <i-tab key="tab2" title="2月"></i-tab>
+    <i-tab key="tab3" title="3月"></i-tab>
+    <i-tab key="tab4" title="4月"></i-tab>
+    <i-tab key="tab5" title="5月"></i-tab>
+    <i-tab key="tab6" title="6月"></i-tab>
+    <i-tab key="tab7" title="7月"></i-tab>
+    <i-tab key="tab8" title="8月"></i-tab>
+    <i-tab key="tab9" title="9月"></i-tab>
+    <i-tab key="tab10" title="10月"></i-tab>
+    <i-tab key="tab11" title="11月"></i-tab>
+    <i-tab key="tab12" title="12月"></i-tab>
+  </i-tabs>
+</view>
