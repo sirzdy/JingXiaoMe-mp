@@ -1,0 +1,111 @@
+/* pages/user/user.wxss */
+
+.sep {
+  flex: 1;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  /* height: 400rpx; */
+  padding: 15rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.user_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_favicon {
+  background: #fff;
+  border-radius: 25rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.user_info {
+  margin: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_nick {
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+
+.user_level {
+  font-size: 24rpx;
+  margin-right: 10rpx;
+  border: 2rpx solid #999;
+  padding: 0 5rpx;
+  /* border-radius: 7rpx; */
+  box-shadow: 2rpx 2rpx 5rpx #888;
+}
+
+.user_identity {
+  font-size: 24rpx;
+  margin-right: 10rpx;
+  border: 2rpx solid #999;
+  padding: 0 5rpx;
+  /* border-radius: 7rpx; */
+  box-shadow: 2rpx 2rpx 5rpx #888;
+}
+
+.user_track {
+  font-size: 24rpx;
+}
+
+.biu {
+  font-size: 40rpx;
+  height: 50rpx;
+  border: 2rpx solid #999;
+  padding: 10rpx;
+}
+
+.spots_wrap {
+  margin: 10rpx 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.spot_wrap {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  width: 230rpx;
+  height: 230rpx;
+  margin-right: 15rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.spot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 230rpx;
+  height: 230rpx;
+  z-index: -1;
+}
+
+.spot_like {
+  margin-right: 10rpx;
+}
+
+.like_num {
+  font-size: 24rpx;
+}
+
+.spot_name {
+  font-size: 24rpx;
+}

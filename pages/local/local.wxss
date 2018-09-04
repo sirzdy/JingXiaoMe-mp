@@ -143,7 +143,8 @@
 .topic {
   margin-right: 15rpx;
   border: 2rpx solid #999;
-  border-radius: 7rpx;
+  /* border-radius: 7rpx; */
+  box-shadow: 2rpx 2rpx 5rpx #888888;
   padding: 0 5rpx;
   font-size: 24rpx;
 }

@@ -1,0 +1,29 @@
+<!--pages/guide/guide.wxml-->
+<!-- <text>pages/guide/guide.wxml</text> -->
+
+<view class='user' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+  <view class='user_header'>
+    <image class='user_favicon' src="../../asserts/images/fav.png" mode="aspectFill"></image>
+    <view class='user_info'>
+      <view>
+        <text class='user_nick'>田馥甄</text>
+        <text class='user_level'>Lv33</text>
+        <text class='user_identity'>蜜导</text>
+      </view>
+      <text class='user_track'>Ta最近在北京留下了330条足迹</text>
+    </view>
+    <view class='sep'></view>
+    <text class="biu">Biu一下</text>
+  </view>
+  <scroll-view class='spots_wrap' scroll-x>
+    <view class='spot_wrap' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+      <view class='wrap'>
+        <image class='spot' src="../../asserts/images/spot.png" mode="aspectFill"></image>
+        <view class='spot_like'>
+          <i-icon type="like" size='14' color='#000' />
+          <text class='like_num'>100</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
