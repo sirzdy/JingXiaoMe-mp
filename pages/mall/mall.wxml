@@ -1,2 +1,112 @@
 <!--pages/mall/mall.wxml-->
-<text>pages/mall/mall.wxml</text>
+<!-- <text>pages/mall/mall.wxml</text> -->
+<view class='container'>
+  <!-- style='position: sticky;top:0' -->
+  <view>
+    <view class='search'>
+      <i-icon class='search_icon' type="search" size='30' color='#000' />
+      <input class='search_box' placeholder='请输入关键词' placeholder-class='search_box_placeholder'></input>
+      <i-icon class='search_icon' type="translation" size='30' color='#000' />
+    </view>
+    <i-tabs color="#509f50" current="{{cur}}" bindchange="handleChange">
+      <i-tab key="tab1" title="蜜蜜逛"></i-tab>
+      <i-tab key="tab2" title="蜜导"></i-tab>
+      <i-tab key="tab3" title="机酒火"></i-tab>
+      <i-tab key="tab4" title="特产/纪念"></i-tab>
+      <i-tab key="tab5" title="防骗/保险"></i-tab>
+      <i-tab key="tab6" title="工具箱"></i-tab>
+    </i-tabs>
+  </view>
+  <view wx:if="{{cur==='tab1'}}" class='page'>
+    <!-- <text>1</text> -->
+    <view class='go'></view>
+    <view class='go'></view>
+    <view class='go'></view>
+    <view class='go'></view>
+    <view class='go'></view>
+    <view class='go'></view>
+  </view>
+  <view wx:if="{{cur==='tab2'}}">
+    <!-- <text>2</text> -->
+    <view class='user' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+      <view class='user_header'>
+        <image class='user_favicon' src="../../asserts/images/fav.png" mode="aspectFill"></image>
+        <view class='user_info'>
+          <view class='user_info_brief'>
+            <text class='user_nick'>田馥甄</text>
+            <text class='user_level'>Lv33</text>
+            <text class='user_identity'>学导</text>
+          </view>
+          <view class='user_info_brief'>
+            <text>导费: ¥100</text>
+            <i-icon style="margin-left:20rpx;" type="coordinates" size='14' color='#509f50' />
+            <text>故宫 颐和园 圆明园</text>
+          </view>
+          <text class='user_track'>Ta最近在北京留下了330条足迹</text>
+        </view>
+        <view class='sep'></view>
+        <text class="biu">biu 一下</text>
+      </view>
+      <scroll-view class='spots_wrap' scroll-x>
+        <view class='spot_wrap' wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="{{index}}">
+          <view class='wrap'>
+            <image class='spot' src="../../asserts/images/spot.png" mode="aspectFill"></image>
+            <view class='spot_like'>
+              <i-icon class='like_icon' type="like" size='14' color='#fff' />
+              <text class='like_num' decode="{{true}}">&nbsp;100</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view wx:if="{{cur==='tab3'}}">
+    <!-- <text>3</text> -->
+    <!-- <view class='card_box'>
+      <view class='card_box_header'>
+        <text class='card_box_header_tab card_box_header_tab_sel'>机票</text>
+        <text class='card_box_header_tab'>火车票</text>
+        <text class='card_box_header_tab'>酒店</text>
+      </view>
+      <view class='card_box_body'>
+      </view>
+    </view> -->
+    <i-tabs color="#509f50" current="{{curType}}" bindchange="handleChangeType">
+      <i-tab key="tab1" title="火车票"></i-tab>
+      <i-tab key="tab2" title="机票"></i-tab>
+      <i-tab key="tab3" title="酒店"></i-tab>
+    </i-tabs>
+    <view class='panel'>
+      <view class='panel_line'>
+        <input value="{{ cityDep }}" placeholder="出发城市" />
+        <i-icon type="refresh" size='30' color='#999' style='margin:0 10rpx;' />
+        <input style='text-align:right;' value="{{ cityArr }}" placeholder="到达城市" />
+      </view>
+      <picker class='panel_line' mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <view class='panel_line panel_line_checkbox'>
+        <checkbox class='panel_checkbox' value="{{item.name}}" checked="{{item.checked}}" />学生票
+        <view class='sep'></view>
+        <checkbox class='panel_checkbox' value="{{item.name}}" checked="{{item.checked}}" />高铁动车
+      </view>
+      <view class='panel_line panel_line_last'>
+        <button class="btn">查询</button>
+      </view>
+      <!-- <i-button style='background: #f1589d;' class="btn" type='primary' bind:click="handleClick">查询</i-button> -->
+    </view>
+
+
+  </view>
+  <view wx:if="{{cur==='tab4'}}">
+    <text>4</text>
+  </view>
+  <view wx:if="{{cur==='tab5'}}">
+    <text>5</text>
+  </view>
+  <view wx:if="{{cur==='tab6'}}">
+    <text>6</text>
+  </view>
+</view>

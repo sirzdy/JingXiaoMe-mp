@@ -1,1 +1,5 @@
 /**app.wxss**/
+
+.sep {
+  flex: 1;
+}

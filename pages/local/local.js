@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  goUser: function () {
+    wx.navigateTo({
+      url: '../user/user'
+    })
   }
 })
