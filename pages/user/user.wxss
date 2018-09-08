@@ -4,9 +4,19 @@
   flex: 1;
 }
 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .user {
   display: flex;
   flex-direction: column;
+  background: #fff;
   /* height: 400rpx; */
   padding: 15rpx;
   border-bottom: 1px solid #ddd;
@@ -31,27 +41,34 @@
   flex-direction: column;
 }
 
+.user_info_brief {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .user_nick {
   font-size: 30rpx;
   margin-right: 20rpx;
 }
 
 .user_level {
-  font-size: 24rpx;
+  font-size: 18rpx;
   margin-right: 10rpx;
-  border: 2rpx solid #999;
+  color: #509f50;
+  border: 2rpx solid #509f50;
   padding: 0 5rpx;
-  /* border-radius: 7rpx; */
-  box-shadow: 2rpx 2rpx 5rpx #888;
+  border-radius: 7rpx;
+  /* box-shadow: 2rpx 2rpx 5rpx #888; */
 }
 
 .user_identity {
-  font-size: 24rpx;
+  font-size: 18rpx;
   margin-right: 10rpx;
-  border: 2rpx solid #999;
+  color: #509f50;
+  border: 2rpx solid #509f50;
   padding: 0 5rpx;
-  /* border-radius: 7rpx; */
-  box-shadow: 2rpx 2rpx 5rpx #888;
+  border-radius: 7rpx;
 }
 
 .user_track {
@@ -59,10 +76,15 @@
 }
 
 .biu {
-  font-size: 40rpx;
-  height: 50rpx;
-  border: 2rpx solid #999;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  /* border: 2rpx solid #999; */
   padding: 10rpx;
+  background: #509f50;
+  border-radius: 7rpx;
+  color: #fff;
 }
 
 .spots_wrap {
@@ -95,15 +117,22 @@
   background: #fff;
   width: 230rpx;
   height: 230rpx;
-  z-index: -1;
+  z-index: 0;
 }
 
 .spot_like {
-  margin-right: 10rpx;
+  padding: 0 10rpx;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  
 }
 
 .like_num {
   font-size: 24rpx;
+  color: #fff;
 }
 
 .spot_name {

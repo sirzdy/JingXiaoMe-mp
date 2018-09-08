@@ -22,6 +22,15 @@
   flex-direction: column-reverse;
 }
 
+.header_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 500rpx;
+  z-index: -1;
+}
+
 .header_info {
   justify-content: space-between;
   align-items: flex-end;
@@ -142,16 +151,16 @@
 
 .topic {
   margin-right: 15rpx;
-  border: 2rpx solid #999;
-  /* border-radius: 7rpx; */
-  box-shadow: 2rpx 2rpx 5rpx #888888;
-  padding: 0 5rpx;
+  border: 2rpx solid #666;
+  /* border: 2rpx solid #509f50; *//* box-shadow: 2rpx 2rpx 5rpx #888888; */
   font-size: 24rpx;
+  color: #333;
+  padding: 0 5rpx;
+  border-radius: 5rpx;
 }
 
-
-.con{
+.con {
   height: 200rpx;
   margin: 10rpx;
-  background: #1296db;
+  background: #509f50;
 }

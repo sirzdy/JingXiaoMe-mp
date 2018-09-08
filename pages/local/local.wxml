@@ -1,7 +1,8 @@
 <!--pages/local/local.wxml-->
 <!-- <text>pages/local/local.wxml</text> -->
 <view class='container'>
-  <view class='header' style='background:url("../../asserts/images/scene.jpg") no-repeat center;background-size: cover;'>
+  <view class='header'>
+    <image class='header_image' src="../../asserts/images/scene.jpg"></image>
     <view class='header_info'>
       <view class='header_info_left'>
         <view>
@@ -14,7 +15,7 @@
         </view>
       </view>
       <view class='header_info_right'>
-        <text class='header_text'>撩下TA</text>
+        <text class='header_text'>biu一下</text>
         <i-icon type="interactive" size="20" color="#ffffff" />
       </view>
     </view>
@@ -23,7 +24,7 @@
     <text class='pos' decode="{{true}}">北京&nbsp;</text>
     <text class='pos_more' decode="{{true}}">/&nbsp;蜜友</text>
   </view>
-  <view class='track'>
+  <view class='track' bindtap='goUser'>
     <view wx:for="{{[1,2,3,4,5]}}" wx:key="{{index}}">
       <image class='track_user' src="../../asserts/images/fav.png" mode="aspectFill"></image>
     </view>
@@ -56,11 +57,11 @@
   </view>
   <!-- <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button> -->
   <view style='position: sticky;top:0'>
-    <i-tabs style='width:100%;' current="tab1" bindchange="handleChange">
+    <i-tabs style='width:100%;' color="#509f50" current="tab1" bindchange="handleChange">
       <i-tab key="tab1" title="最新"></i-tab>
       <i-tab key="tab2" title="热门"></i-tab>
     </i-tabs>
-    <i-tabs style='width:100%;' current="tab1" bindchange="handleChange" scroll="{true}">
+    <i-tabs style='width:100%;' color="#509f50" current="tab1" bindchange="handleChange" scroll="{true}">
       <i-tab key="tab1" title="1月"></i-tab>
       <i-tab key="tab2" title="2月"></i-tab>
       <i-tab key="tab3" title="3月"></i-tab>

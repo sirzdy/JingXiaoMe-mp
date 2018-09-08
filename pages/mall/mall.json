@@ -1,1 +1,10 @@
-{}
+{
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index",
+    "i-panel": "../../dist/panel/index",
+    "i-input": "../../dist/input/index",
+    "i-button": "../../dist/button/index"
+  }
+}
