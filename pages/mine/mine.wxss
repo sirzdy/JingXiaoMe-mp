@@ -1,4 +1,11 @@
 /* pages/mine/mine.wxss */
+.content{
+  background-color: #f0f0f0;
+}
+.user{
+  background-color: #fff;
+  /* margin-bottom: 6px; */
+}
 .grid_text{
   font-size: 12px;
 }
@@ -8,6 +15,7 @@
 .info{
   margin: 16px 10px;
   display: flex;
+  
 }
 .info_cel{
   flex: 1;
@@ -19,4 +27,48 @@
 }
 .info_lv{
   margin-left: 6px;
+}
+.ope{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 10px; */
+}
+.btn_up{
+  width: 220px;
+}
+.visitor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  /* margin:16px 0; */
+}
+.v_photo{
+  margin-right: 4px;
+}
+.clock{
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+  padding: 0 14px;
+  margin:4px 0;
+  height: 60px;
+    background-color: #fff;
+}
+.card_btn{
+  width: 80px;
+  height: 30px;
+  background: #f90;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.grid{
+  background-color: #fff;
+  /* padding-bottom: 30px; */
 }

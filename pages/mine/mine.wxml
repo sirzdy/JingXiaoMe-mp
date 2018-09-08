@@ -1,67 +1,124 @@
 <!--pages/mine/mine.wxml-->
-<i-notice-bar icon="systemprompt" closable>
-<i-avatar size="small" i-class='photo'>梁</i-avatar>
-<i-avatar size="small">宋</i-avatar>
-<i-avatar size="small">李</i-avatar>
-  等10位好友正在使用京小蜜
-</i-notice-bar>
+<view class='content'>
+  <view class='user'>
+  <i-notice-bar icon="systemprompt" closable>
+  <i-avatar size="small" i-class='photo'>梁</i-avatar>
+  <i-avatar size="small">宋</i-avatar>
+  <i-avatar size="small">李</i-avatar>
+    等10位好友正在使用京小蜜
+  </i-notice-bar>
 
-<view class='info'>
-  <i-avatar  size="large">梁</i-avatar>
-  <view class='info_cel'>
-  <view>
-  <label>张三</label>
-  <i-tag 
-      i-class='info_lv'
-      class="i-tags"
-      name="Lv1" 
-      color="green"
-      type="border">
-      Lv1
-  </i-tag>
+  <view class='info'>
+    <i-avatar  size="large">梁</i-avatar>
+    <view class='info_cel'>
+      <view>
+      <label>张三</label>
+      <i-tag 
+          i-class='info_lv'
+          class="i-tags"
+          name="Lv1" 
+          color="green"
+          type="border">
+          Lv1
+      </i-tag>
+      </view>
+      <i-icon type="enter" />
+    </view>
   </view>
-  <i-icon type="enter" />
+  <!-- 上传 -->
+  <view  class='ope'>
+
+  <navigator url='/pages/track/track'>
+    <i-button bind:click="handleClick" 
+    shape='circle'
+    type='success'
+    i-class='btn_up'
+    >
+      <i-icon type="camera" size="26" bindtap='showTrack' /> 留下我的足迹
+    </i-button>
+  </navigator>
+  </view>
+  <!-- 访客 -->
+  <view class='visitor'>
+    <view>
+    <i-avatar i-class='v_photo' src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="small" shape="circle"></i-avatar>
+    <i-avatar i-class='v_photo' src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="small" shape="circle"></i-avatar>
+      <i-avatar i-class='v_photo' src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="small" shape="circle"></i-avatar>
+      </view>
+    <view>
+    <label>最近访客</label>
+    <i-icon type="enter" />
+    </view>
   </view>
 </view>
-<i-grid>
-    <i-grid-item>
-        <i-grid-icon>
-          <i-icon type="collection_fill" size="20" color='#EDA524' />
-        </i-grid-icon>
-        <i-grid-label i-class='grid_text'>我的收藏</i-grid-label>
-    </i-grid-item>
-    <navigator url="/pages/orderList/index">
+<!-- 打卡 -->
+<view class='clock'>
+  <view>
+    <label>蜜糖</label>
+    <label>30</label>
+  </view>
+  
+   <button class='card_btn'>打卡</button>
+</view>
+  <view class='grid'>
+    <i-grid>
+        <i-grid-item>
+            <i-grid-icon>
+              <i-icon type="collection_fill" size="20" color='#EDA524' />
+            </i-grid-icon>
+            <i-grid-label i-class='grid_text'>我的收藏</i-grid-label>
+        </i-grid-item>
+        <navigator url="/pages/orderList/index">
+          <i-grid-item>
+            <i-grid-icon>
+              <i-icon type="createtask_fill" size="20" color='#4CC0D3' />
+            </i-grid-icon>
+            <i-grid-label>我的订单</i-grid-label>
+          </i-grid-item>
+      </navigator>
       <i-grid-item>
         <i-grid-icon>
-          <i-icon type="createtask_fill" size="20" color='#4CC0D3' />
+          <i-icon type="live_fill" size="20" color='#53BADF' />
         </i-grid-icon>
-        <i-grid-label>我的订单</i-grid-label>
+        <i-grid-label>我的游记</i-grid-label>
       </i-grid-item>
-  </navigator>
-  <i-grid-item>
-    <i-grid-icon>
-      <i-icon type="live_fill" size="20" color='#53BADF' />
-    </i-grid-icon>
-    <i-grid-label>我的游记</i-grid-label>
-  </i-grid-item>
-</i-grid>
-<i-grid>
-  <i-grid-item>
-    <i-grid-icon>
-     <i-icon type="collection_fill" size="20" color='#88CC6F' />
-    </i-grid-icon>
-    <i-grid-label>Grid</i-grid-label>
-  </i-grid-item>
-  <i-grid-item>
-    <i-grid-icon>
-     <i-icon type="collection_fill" size="20" color='#F1589D' />
-    </i-grid-icon>
-    <i-grid-label>Grid</i-grid-label>
-  </i-grid-item>
-  <i-grid-item>
-    <i-grid-icon>
-     <i-icon type="collection_fill" size="20" color='#4CC0D3' />
-    </i-grid-icon>
-    <i-grid-label>Grid</i-grid-label>
-  </i-grid-item>
-</i-grid>
+    </i-grid>
+    <i-grid>
+      <i-grid-item>
+        <i-grid-icon>
+        <i-icon type="collection_fill" size="20" color='#88CC6F' />
+        </i-grid-icon>
+        <i-grid-label>Grid</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+        <i-grid-icon>
+        <i-icon type="collection_fill" size="20" color='#F1589D' />
+        </i-grid-icon>
+        <i-grid-label>Grid</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+        <i-grid-icon>
+        <i-icon type="collection_fill" size="20" color='#4CC0D3' />
+        </i-grid-icon>
+        <i-grid-label>Grid</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+  </view>
+</view>
+
+<view class='bg'  wx:if='{{status}}'>
+    <label class='bg_title'>留下我的足迹</label>
+    <view class='bg_content'>
+      <view class='c_block'>
+        <i-icon type="picture_fill" size='80' color='#53BADF'/>
+        <label class='c_name'>图片（多图）</label>
+      </view>
+     <view class='c_block'>
+        <i-icon type="createtask" size='80' color='#F1589D'/>
+        <label class='c_name'>游记</label>
+      </view>
+    </view>
+      <view class='close'>
+      <i-icon type="close" size='16' bindtap='close' />
+      </view>
+    </view>

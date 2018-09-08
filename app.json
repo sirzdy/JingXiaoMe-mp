@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/mine/mine",
+    "pages/track/track",
     "pages/index/index",
+    
     "pages/user/user",
     "pages/local/local",
     "pages/mall/mall",
@@ -9,6 +11,7 @@
     "pages/record/record",
     "pages/logs/logs",
     "pages/orderList/index"
+    
   ],
   "tabBar": {
     "color": "#000000",
