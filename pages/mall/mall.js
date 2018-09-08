@@ -10,13 +10,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cur: 'tab2',
+    cur: 'tab5',
     curType: 'tab1',
     cityDep: "北京",
     cityArr: "上海",
     // date: "10月25日",
     startDate: "2018-09-01",
     endDate: "2018-10-31",
+    /* swiper */
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
 
   /**
@@ -32,6 +42,16 @@ Page({
       date: getDate(date),
       startDate: formatDate(startDate),
       endDate: formatDate(endDate),
+    })
+
+    wx.requestPayment({
+      'timeStamp': Date.now() + '',
+      'nonceStr': '',
+      'package': '',
+      'signType': 'MD5',
+      'paySign': '',
+      'success': function(res) {},
+      'fail': function(res) {}
     })
   },
 

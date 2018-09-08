@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/mall/mall",
     "pages/mine/mine",
     "pages/index/index",
     "pages/user/user",
     "pages/local/local",
-    "pages/mall/mall",
     "pages/login/login",
     "pages/record/record",
     "pages/logs/logs",
